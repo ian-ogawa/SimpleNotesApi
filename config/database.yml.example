@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username:
+  password:
+
+development:
+  <<: *default
+  database: SimpleNotesApi_development
+
+test:
+  <<: *default
+  database: SimpleNotesApi_test
+
+production:
+  <<: *default
+  database: SimpleNotesApi_production
+  username: SimpleNotesApi
+  password: <%= ENV['SIMPLENOTESAPI_DATABASE_PASSWORD'] %>
