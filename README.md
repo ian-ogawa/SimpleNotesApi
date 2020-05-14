@@ -1,11 +1,11 @@
-# Simple Notes API
+# Simple Notes API example
 
-This is API for simple notes app.
+This is API for simple notes app example.
 
 ## System version
 
-* **> ruby 2.5.1**
-* **> Rails 5.2.3**
+* ** ruby 2.5.1**
+* ** Rails 5.2.3**
 
 ## System dependencies
 
